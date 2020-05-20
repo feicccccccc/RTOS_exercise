@@ -1,0 +1,26 @@
+--cpu=Cortex-M4 --fpu=SoftVFP
+"uvision_standard\startup_stm32f407xx.o"
+"uvision_standard\main.o"
+"uvision_standard\stm32f4xx_it.o"
+"uvision_standard\stm32f4xx_hal_msp.o"
+"uvision_standard\stm32f4xx_hal_tim.o"
+"uvision_standard\stm32f4xx_hal_tim_ex.o"
+"uvision_standard\stm32f4xx_hal_rcc.o"
+"uvision_standard\stm32f4xx_hal_rcc_ex.o"
+"uvision_standard\stm32f4xx_hal_flash.o"
+"uvision_standard\stm32f4xx_hal_flash_ex.o"
+"uvision_standard\stm32f4xx_hal_flash_ramfunc.o"
+"uvision_standard\stm32f4xx_hal_gpio.o"
+"uvision_standard\stm32f4xx_hal_dma_ex.o"
+"uvision_standard\stm32f4xx_hal_dma.o"
+"uvision_standard\stm32f4xx_hal_pwr.o"
+"uvision_standard\stm32f4xx_hal_pwr_ex.o"
+"uvision_standard\stm32f4xx_hal_cortex.o"
+"uvision_standard\stm32f4xx_hal.o"
+"uvision_standard\stm32f4xx_hal_exti.o"
+"uvision_standard\system_stm32f4xx.o"
+"uvision_standard\miros.o"
+--library_type=microlib --strict --scatter "uVision_standard\uVision_standard.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "..\..\uVision_standard.map" -o uVision_standard\uVision_standard.axf
